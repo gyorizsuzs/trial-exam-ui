@@ -22,15 +22,15 @@ function loadEvent() {
   for (beer of beerCards) {
     rootElement.insertAdjacentHTML(
       'beforeend',
-      beerCardComponent(beer.title, beer.sub, beer.text)
+      beerCardComponent(beer.id, beer.title, beer.sub, beer.text)
     );
   }
 }
 
-const beerCardComponent = function (beerName, beerCompany, beerType) {
+const beerCardComponent = function (beerId, beerName, beerCompany, beerType) {
   return `
           <section class="card">
-              <span class="number">1</span>
+              <span class="number">${beerId}</span>
               <div class="inner-card">
                   <p class="title">${beerName}y</p>
                   <hr />
