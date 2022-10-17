@@ -1,0 +1,76 @@
+:root {
+  --primary: #ffeedf;
+  --secondary: #145434;
+
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+
+  header {
+    margin: 5px 15px;
+
+    height: 60px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--secondary);
+      flex: 3;
+    }
+  }
+
+  hr {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+  }
+
+  .cards-container {
+    max-width: 1200px;
+    gap: 60px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+
+    .card {
+      .number {
+        height: 40px;
+        width: 40px;
+        border: 1px solid var(--secondary);
+        border-radius: 50%;
+        font-size: 24px;
+      }
+
+      .inner-card {
+        .title {
+          font-size: 36px;
+        }
+
+        .sub {
+          font-size: 18px;
+        }
+
+        .text {
+          font-size: 18px;
+        }
+      }
+
+      button {
+        height: 50px;
+        width: 200px;
+
+        .button-text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
