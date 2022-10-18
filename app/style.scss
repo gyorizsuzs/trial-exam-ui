@@ -1,5 +1,5 @@
 :root {
-  --primary: black;
+  --primary: #ffeedf;
   --secondary: #145434;
 
   font-family: 'Space Grotesk', sans-serif;
@@ -49,7 +49,7 @@ header {
   padding: 8px;
   max-width: 400px;
   width: 80%;
-  height: 260px;
+  /* height: 260px; */
 
   background-color: var(--secondary);
   color: var(--primary);
@@ -88,7 +88,7 @@ header {
     .title {
       font-size: 36px;
 
-      margin-bottom: 50px;
+      margin-bottom: 20%;
     }
 
     .inner-container {
@@ -105,6 +105,7 @@ header {
 
       .text {
         font-size: 18px;
+        font-weight: 600;
       }
     }
   }

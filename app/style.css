@@ -1,5 +1,5 @@
 :root {
-  --primary: black;
+  --primary: #ffeedf;
   --secondary: #145434;
   font-family: "Space Grotesk", sans-serif;
 }
@@ -44,7 +44,7 @@ header .header-container h1 {
   padding: 8px;
   max-width: 400px;
   width: 80%;
-  height: 260px;
+  /* height: 260px; */
   background-color: var(--secondary);
   color: var(--primary);
   display: flex;
@@ -75,7 +75,7 @@ header .header-container h1 {
 }
 .card .text-container .title {
   font-size: 36px;
-  margin-bottom: 50px;
+  margin-bottom: 20%;
 }
 .card .text-container .inner-container {
   padding-top: 15px;
@@ -89,6 +89,7 @@ header .header-container h1 {
 }
 .card .text-container .inner-container .text {
   font-size: 18px;
+  font-weight: 600;
 }
 .card button {
   height: 50px;
