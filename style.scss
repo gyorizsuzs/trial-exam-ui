@@ -18,6 +18,12 @@ body {
   background-color: var(--primary);
   display: flex;
   flex-direction: column;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 header {
